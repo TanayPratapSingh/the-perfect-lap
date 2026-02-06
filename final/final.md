@@ -1,14 +1,4 @@
 # The Perfect Lap: Predicting Optimal Pit Stops for Race Success
-# IST 707 Apllied Machine Learning Final Project Report
-
-## Team Omega
-
-**Team Members:**
-- Tanay Singh (GitHub: TanayPratapSingh)
-- Atharva Karekar (GitHub: ath1812)
-- Titus Kenneth George Kirubaharan (GitHub: tkenneth2106)
-- Praveer Nagaraja Byndoor (GitHub: praveerbn)
-- Srikanth Mannepalli (GitHub: srikanthmannepalli0502-cmyk)
 
 ## Introduction
 
