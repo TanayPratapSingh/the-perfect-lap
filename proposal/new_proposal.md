@@ -1,14 +1,5 @@
 # The Perfect Lap: Predicting Optimal Pit Stops for Race Success
 
-## Team Omega
-- Tanay Singh (GitHub: TanayPratapSingh)
-- Atharva Karekar (GitHub: ath1812)
-- Titus Kenneth George Kirubaharan (GitHub: tkenneth2106)
-- Praveer Nagaraja Byndoor (GitHub: praveerbn)
-- Srikanth Mannepalli (GitHub: srikanthmannepalli0502-cmyk)
-
----
-
 ## Introduction
 We want to answer a simple question: **When is the best time to make a pit stop in Formula 1?**  
 Our goal is to use race data to predict the lap where a driver should change tires to get the best chance of winning. This is not only about how fast a pit crew works, but about **when** a pit stop should happen.
