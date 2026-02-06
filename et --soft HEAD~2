@@ -1,0 +1,78 @@
+[33mcommit 0799b2e16608065b921e0ccc51387d689360a62e[m
+Author: praveerbn <pbyndoor@syr.edu>
+Date:   Wed Dec 3 00:54:26 2025 +0000
+
+    model visual everything
+
+[1mdiff --git a/code/PlanA_RF_Model.pkl b/code/PlanA_RF_Model.pkl[m
+[1mnew file mode 100644[m
+[1mindex 0000000..aca2bbb[m
+Binary files /dev/null and b/code/PlanA_RF_Model.pkl differ
+[1mdiff --git a/code/catboost_info/catboost_training.json b/code/catboost_info/catboost_training.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3a367aa[m
+[1m--- /dev/null[m
+[1m+++ b/code/catboost_info/catboost_training.json[m
+[36m@@ -0,0 +1,504 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m"meta":{"test_sets":[],"test_metrics":[],"learn_metrics":[{"best_value":"Min","name":"MAE"},{"best_value":"Min","name":"RMSE"}],"launch_mode":"Train","parameters":"","iteration_count":500,"learn_sets":["learn"],"name":"experiment"},[m
+[32m+[m[32m"iterations":[[m
+[32m+[m[32m{"learn":[5.31202718,7.289039336],"iteration":0,"passed_time":0.06212664028,"remaining_time":31.0011935},[m
+[32m+[m[32m{"learn":[5.199056782,7.158366196],"iteration":1,"passed_time":0.07111214951,"remaining_time":17.70692523},[m
+[32m+[m[32m{"learn":[5.092097976,7.029350003],"iteration":2,"passed_time":0.07866738378,"remaining_time":13.03256325},[m
+[32m+[m[32m{"learn":[4.991242,6.911573104],"iteration":3,"passed_time":0.08711277081,"remaining_time":10.80198358},[m
+[32m+[m[32m{"learn":[4.891926495,6.79910129],"iteration":4,"passed_time":0.09370533812,"remaining_time":9.276828473},[m
+[32m+[m[32m{"learn":[4.806852974,6.703200332],"iteration":5,"passed_time":0.09886258109,"remaining_time":8.139685843},[m
+[32m+[m[32m{"learn":[4.721087123,6.600074628],"iteration":6,"passed_time":0.1057784988,"remaining_time":7.44982856},[m
+[32m+[m[32m{"learn":[4.640724212,6.509535041],"iteration":7,"passed_time":0.1117383521,"remaining_time":6.871908652},[m
+[32m+[m[32m{"learn":[4.571677036,6.429696011],"iteration":8,"passed_time":0.1176839989,"remaining_time":6.420315941},[m
+[32m+[m[32m{"learn":[4.496859244,6.345700967],"iteration":9,"passed_time":0.1236818427,"remaining_time":6.060410291},[m
+[32m+[m[32m{"learn":[4.430640985,6.267385326],"iteration":10,"passed_time":0.1303989416,"remaining_time":5.796825675},[m
+[32m+[m[32m{"learn":[4.372870881,6.201882853],"iteration":11,"passed_time":0.1359438544,"remaining_time":5.52838341},[m
+[32m+[m[32m{"learn":[4.313059411,6.132240833],"iteration":12,"passed_time":0.1419717637,"remaining_time":5.318480687},[m
+[32m+[m[32m{"learn":[4.260482044,6.074937699],"iteration":13,"passed_time":0.1489623703,"remaining_time":5.171122283},[m
+[32m+[m[32m{"learn":[4.208973025,6.015609437],"iteration":14,"passed_time":0.1559322179,"remaining_time":5.04180838},[m
+[32m+[m[32m{"learn":[4.158566221,5.961637689],"iteration":15,"passed_time":0.1618119424,"remaining_time":4.894811259},[m
+[32m+[m[32m{"learn":[4.113094979,5.91330958],"iteration":16,"passed_time":0.1680297541,"remaining_time":4.774021837},[m
+[32m+[m[32m{"learn":[4.072983266,5.869140051],"iteration":17,"passed_time":0.1743360202,"remaining_time":4.668331207},[m
+[32m+[m[32m{"learn":[4.034398943,5.823140249],"iteration":18,"passed_time":0.1807740206,"remaining_time":4.576437047},[m
+[32m+[m[32m{"learn":[3.994298119,5.781777165],"iteration":19,"passed_time":0.1875875883,"remaining_time":4.502102119},[m
+[32m+[m[32m{"learn":[3.963517586,5.752162016],"iteration":20,"passed_time":0.1938162904,"remaining_time":4.42085729},[m
+[32m+[m[32m{"learn":[3.938619488,5.726172629],"iteration":21,"passed_time":0.2010238192,"remaining_time":4.367699345},[m
+[32m+[m[32m{"learn":[3.914616477,5.696651631],"iteration":22,"passed_time":0.2197031529,"remaining_time":4.556452345},[m
+[32m+[m[32m{"learn":[3.888430846,5.668746814],"iteration":23,"passed_time":0.2364053365,"remaining_time":4.68870584},[m
+[32m+[m[32m{"learn":[3.862879194,5.638714568],"iteration":24,"passed_time":0.2497242296,"remaining_time":4.744760362},[m
+[32m+[m[32m{"learn":[3.832788452,5.602734221],"iteration":25,"passed_time":0.2614978146,"remaining_time":4.767306313},[m
+[32m+[m[32m{"learn":[3.805464894,5.57144733],"iteration":26,"passed_time":0.2700531555,"remaining_time":4.730931206},[m
+[32m+[m[32m{"learn":[3.78169929,5.54538344],"iteration":27,"passed_time":0.277265764,"remaining_time":4.673908593},[m
+[32m+[m[32m{"learn":[3.758367215,5.517832853],"iteration":28,"passed_time":0.2852774157,"remaining_time":4.633298717},[m
+[32m+[m[32m{"learn":[3.75031506,5.509631279],"iteration":29,"passed_time":0.2881724897,"remaining_time":4.514702339},[m
+[32m+[m[32m{"learn":[3.73484658,5.494106108],"iteration":30,"passed_time":0.297107385,"remaining_time":4.494947212},[m
+[32m+[m[32m{"learn":[3.715736731,5.474192298],"iteration":31,"passed_time":0.3053029381,"remaining_time":4.465055469},[m
+[32m+[m[32m{"learn":[3.700739423,5.457947692],"iteration":32,"passed_time":0.3114599369,"remaining_time":4.407630015},[m
+[32m+[m[32m{"learn":[3.68249231,5.436249795],"iteration":33,"passed_time":0.3178991796,"remaining_time":4.357088755},[m
+[32m+[m[32m{"learn":[3.661854132,5.413786087],"iteration":34,"passed_time":0.3264711346,"remaining_time":4.337402217},[m
+[32m+[m[32m{"learn":[3.641244927,5.39065317],"iteration":35,"passed_time":0.3334211053,"remaining_time":4.29742758},[m
+[32m+[m[32m{"learn":[3.621864396,5.367791252],"iteration":36,"passed_time":0.3401232462,"remaining_time":4.256136838},[m
+[32m+[m[32m{"learn":[3.610683031,5.357011817],"iteration":37,"passed_time":0.3456307799,"remaining_time":4.202142639},[m
+[32m+[m[32m{"learn":[3.588035496,5.3316699],"iteration":38,"passed_time":0.3570130953,"remaining_time":4.22007787},[m
+[32m+[m[32m{"learn":[3.577048937,5.318884211],"iteration":39,"passed_time":0.3641161502,"remaining_time":4.187335728},[m
+[32m+[m[32m{"learn":[3.559699542,5.298545692],"iteration":40,"passed_time":0.3702590931,"remaining_time":4.145095701},[m
+[32m+[m[32m{"learn":[3.544375652,5.281550051],"iteration":41,"passed_time":0.3778574278,"remaining_time":4.120445284},[m
+[32m+[m[32m{"learn":[3.530172249,5.264224399],"iteration":42,"passed_time":0.3845438297,"remaining_time":4.08689605},[m
+[32m+[m[32m{"learn":[3.520753901,5.255561954],"iteration":43,"passed_time":0.392085639,"remaining_time":4.063432986},[m
+[32m+[m[32m{"learn":[3.507248213,5.240885251],"iteration":44,"passed_time":0.4004084283,"remaining_time":4.048574108},[m
+[32m+[m[32m{"learn":[3.497917958,5.230480433],"iteration":45,"passed_time":0.4069936522,"remaining_time":4.016850393},[m
+[32m+[m[32m{"learn":[3.485398319,5.213984774],"iteration":46,"passed_time":0.4131058682,"remaining_time":3.981637411},[m
+[32m+[m[32m{"learn":[3.478360107,5.205867918],"iteration":47,"passed_time":0.419584264,"remaining_time":3.951085153},[m
+[32m+[m[32m{"learn":[3.469472678,5.195223942],"iteration":48,"passed_time":0.4293474769,"remaining_time":3.951749226},[m
+[32m+[m[32m{"learn":[3.458237587,5.183257196],"iteration":49,"passed_time":0.4356002538,"remaining_time":3.920402285},[m
+[32m+[m[32m{"learn":[3.449276632,5.170738016],"iteration":50,"passed_time":0.4426697968,"remaining_time":3.897230171},[m
+[32m+[m[32m{"learn":[3.431979292,5.151057145],"iteration":51,"passed_time":0.4512590807,"remaining_time":3.887770541},[m
+[32m+[m[32m{"learn":[3.426003363,5.14518005],"iteration":52,"passed_time":0.4633668689,"remaining_time":3.908018687},[m
+[32m+[m[32m{"learn":[3.41299808,5.130631226],"iteration":53,"passed_time":0.4873708232,"remaining_time":4.025321984},[m
+[32m+[m[32m{"learn":[3.403768758,5.119841483],"iteration":54,"passed_time":0.503401841,"remaining_time":4.072978531},[m
+[32m+[m[32m{"learn":[3.392284392,5.107917116],"iteration":55,"passed_time":0.518820091,"remaining_time":4.11350215},[m
+[32m+[m[32m{"learn":[3.385877236,5.101815896],"iteration":56,"passed_time":0.535235382,"remaining_time":4.159811829},[m
+[32m+[m[32m{"learn":[3.379940921,5.095451581],"iteration":57,"passed_time":0.5492034001,"remaining_time":4.18530867},[m
+[32m+[m[32m{"learn":[3.371006845,5.084393271],"iteration":58,"
